@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>project</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 99%;
+      height: 1000px;
+      background-image: url(background_img.jpg);
+    }
+
+    .navbar {
+      box-sizing: border-box;
+      margin: 6px;
+      background-color: rgb(223, 229, 234);
+      border-radius: 30px;
+      border: 1px solid rgb(223, 170, 56);
+    }
+
+    .navbar ul {
+      overflow: auto;
+    }
+
+    .navbar li {
+      float: left;
+      margin: 6px;
+      padding: 6px;
+      list-style: none;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      text-size-adjust: 16px;
+      color: rgb(69, 25, 173);
+    }
+
+    .navbar li a:hover {
+      background-color: aqua;
+      color: rgb(4, 85, 85);
+      ;
+    }
+
+    #search {
+      float: right;
+      box-sizing: border-box;
+      margin: 6px;
+      padding: 5px;
+      border: 1px solid rgb(157, 157, 236);
+      border-radius: 30px;
+      background-color: none;
+    }
+    
+
+    .form {
+      border: 3px solid rgb(40, 128, 210);
+      border-radius: 22px;
+      margin: 8px 80px;
+      padding: 6px 8px;
+      display: block;
+      text-align: center;
+      font-size: 25px;
+      width: 400px;
+      /* text-transform:capitalize; */
+    }
+      
+    
+    
+
+    h2 {
+      padding: 3px;
+      text-align: center;
+      margin-top: 200px;
+      margin-left: 80px;
+      margin-bottom: 20px;
+      background-color: white;
+      display: inline-block;
+      width: 400px;
+      border-radius: 22px;
+      border: 3px solid silver
+    }
+    .btn{
+      border: 2px solid blanchedalmond;
+      border-radius: 14px;
+      margin: 30px 80px;
+      padding: 6px 3px;
+      font-size: 22px;
+      color: rgb(6, 18, 25);
+      width: 400px;
+      font-weight: bold;
+
+    }
+    .btn:hover{
+      background-color: rgb(145, 177, 220);
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Email</a></li>
+          <div class="search">
+            <input type="text" name="search" id="search" placeholder="search" />
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="info">
+    <div>
+      <h2> Connect with us...</h2>
+    </div>
+    <form action="bmr.php">
+      <input type="text" class="form" id="name" placeholder="enter your name">
+      <input type="text" class="form" id="contact" placeholder="enter your contact number">
+      <input type="email" class="form" id="mail" placeholder=" enter your email">
+      
+      <input type="submit" class="form" id="mail" value="submit">
+      
+      
+      <button class="btn">Submit the form</button>
+  
+    </form>
+
+    </div>
+
+</body>
+
+</html>
